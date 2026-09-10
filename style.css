@@ -1,0 +1,71 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f0f14;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #a0a0ad;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+.talk-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.talk-btn:hover {
+  background: #5b4bd1;
+  transform: scale(1.03);
+}
+
+.talk-btn.active {
+  background: #e74c3c;
+}
+
+.status {
+  margin-top: 14px;
+  color: #a0a0ad;
+  font-size: 0.9rem;
+}
+
+.transcript {
+  margin-top: 24px;
+  text-align: left;
+  background: #1a1a22;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 80px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.transcript .line {
+  margin-bottom: 8px;
+}
+
+.transcript .user { color: #74c0fc; }
+.transcript .agent { color: #91e0a2; }
